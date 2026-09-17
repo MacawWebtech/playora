@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playora Night | After-Dark Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body.night-home { background: var(--black); color: var(--white); }
+    body.night-home .site-header { background: rgba(10,10,10,0.95); border-bottom-color: rgba(255,77,109,0.25); }
+    body.night-home .logo, body.night-home .nav-link, body.night-home .home-switch-trigger { color: var(--white); }
+    body.night-home .nav-link:hover, body.night-home .nav-link.active { color: var(--accent); background: var(--accent-soft); }
+    body.night-home .home-switch-dropdown { background: var(--white) !important; }
+    body.night-home .home-switch-dropdown .home-option { color: var(--black) !important; }
+    body.night-home .menu-toggle { background: rgba(255,255,255,0.1); color: var(--white); }
+    @media (max-width: 768px) {
+      body.night-home .nav-menu .nav-link,
+      body.night-home .nav-menu .home-switch-trigger { color: var(--black); }
+    }
+    .night-hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; padding-top: var(--header-h); }
+    .night-hero-bg { position: absolute; inset: 0; z-index: 0; }
+    .night-hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.28); }
+    .night-hero-content { position: relative; z-index: 2; max-width: 700px; padding: 2rem; }
+    .night-hero h1 { color: var(--white); font-size: clamp(2.6rem, 7vw, 4.2rem); margin-bottom: 1.25rem; }
+    .night-hero .lead { color: rgba(255,255,255,0.85); margin-bottom: 2rem; }
+    .glow-pill { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--accent-soft); border: 1px solid rgba(255,77,109,0.45); color: var(--accent); padding: 0.5rem 1.2rem; border-radius: 999px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; }
+    .night-section { padding-block: 5rem; }
+    .night-section h2 { color: var(--white); }
+    .night-section .section-head p { color: rgba(255,255,255,0.7); }
+    .night-section .eyebrow { background: var(--accent-soft); color: var(--accent); }
+    .night-card { background: var(--black-soft); border: 1px solid rgba(255,77,109,0.2); border-radius: var(--radius-lg); padding: 2rem; text-align: center; transition: all 0.35s ease; color: var(--white); }
+    .night-card:hover { border-color: var(--accent); box-shadow: 0 0 30px var(--accent-glow); transform: translateY(-6px); }
+    .night-card .icon { width: 64px; height: 64px; margin: 0 auto 1.25rem; background: var(--accent); color: var(--white); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; }
+    .night-card h3 { color: var(--white); margin-bottom: 0.5rem; }
+    .night-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+    .partner-row { display: flex; flex-wrap: wrap; gap: 1.25rem; justify-content: center; align-items: center; }
+    .partner-badge { background: var(--black-soft); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-md); padding: 1.25rem 1.75rem; font-weight: 700; font-size: 1.05rem; color: var(--white); transition: all 0.3s ease; }
+    .partner-badge:hover { border-color: var(--accent); color: var(--accent); }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .product-card { background: var(--black-soft); border: 1px solid rgba(255,77,109,0.15); border-radius: var(--radius-lg); overflow: hidden; transition: all 0.35s ease; }
+    .product-card:hover { border-color: var(--accent); transform: translateY(-8px); box-shadow: 0 0 28px var(--accent-glow); }
+    .product-card img { width: 100%; aspect-ratio: 16/11; object-fit: cover; }
+    .product-card-body { padding: 1.25rem; }
+    .product-card-body h3 { color: var(--white); margin-bottom: 0.4rem; }
+    .product-card-body p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+    .compare-dark { width: 100%; border-collapse: collapse; min-width: 560px; }
+    .compare-dark th, .compare-dark td { padding: 1rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); }
+    .compare-dark th { background: var(--accent); color: var(--white); }
+    .compare-dark th:first-child, .compare-dark td:first-child { text-align: left; }
+    .compare-dark tr:hover td { background: rgba(255,77,109,0.08); }
+    @media (max-width: 768px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .night-section { padding-block: 3.5rem; }
+    }
+  </style>
+</head>
+<body class="night-home">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <nav class="nav-menu">
+        <div class="home-switch">
+          <span class="home-switch-trigger">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option"><span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span> Home 1 – Main</a>
+            <a href="index-night.html" class="home-option"><span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span> Home 2 – Night</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="night-hero">
+    <div class="night-hero-bg"><img src="assets/images/home-2.jpg" alt="Night play"></div>
+    <div class="night-hero-content observe-fade">
+      <span class="glow-pill"><i class="bi bi-moon-stars-fill"></i> After Dark</span>
+      <h1>Play Under the <span style="color:var(--accent)">Stars</span></h1>
+      <p class="lead">Glow zones, neon energy and exclusive evening sessions — only on Home 2.</p>
+      <div class="hero-btns" style="justify-content:center;">
+        <a href="login.html" class="btn btn-primary btn-lg">Book Night Session</a>
+        <a href="index.html" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;">Day Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certification of Partners -->
+  <section class="night-section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Trusted</span>
+        <h2>Certification of Partners</h2>
+        <p>We work with certified safety and equipment partners worldwide.</p>
+      </div>
+      <div class="partner-row observe-fade">
+        <div class="partner-badge">ASTM Certified</div>
+        <div class="partner-badge">EN 1176</div>
+        <div class="partner-badge">ISO 9001</div>
+        <div class="partner-badge">Soft-Play Pro</div>
+        <div class="partner-badge">Safety First Co.</div>
+        <div class="partner-badge">Global Play Net</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Core Solution -->
+  <section class="night-section" style="background:var(--black-soft);">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Solutions</span>
+        <h2>Our Core Solution</h2>
+        <p>End-to-end indoor play design, build and operate support.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="night-card observe-fade"><div class="icon"><i class="bi bi-pencil-square"></i></div><h3>Design &amp; Planning</h3><p>Custom layouts for age zones, flow and safety from day one.</p></div>
+        <div class="night-card observe-fade delay-1"><div class="icon"><i class="bi bi-tools"></i></div><h3>Build &amp; Install</h3><p>Certified equipment installation with on-site supervision.</p></div>
+        <div class="night-card observe-fade delay-2"><div class="icon"><i class="bi bi-gear"></i></div><h3>Operate &amp; Grow</h3><p>Booking systems, training and ongoing safety audits.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Products -->
+  <section class="night-section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Products</span>
+        <h2>Premium Products</h2>
+        <p>Signature play systems with images, specs and clear descriptions.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card observe-fade">
+          <img src="assets/images/soft.jpg" alt="Soft Play System">
+          <div class="product-card-body">
+            <h3>Soft Play System</h3>
+            <p>Modular soft structures for toddlers — foam, ball pits and sensory panels.</p>
+          </div>
+        </div>
+        <div class="product-card observe-fade delay-1">
+          <img src="assets/images/adventure.jpg" alt="Adventure Frames">
+          <div class="product-card-body">
+            <h3>Adventure Frames</h3>
+            <p>Multi-level frames with slides and nets for ages 4–7.</p>
+          </div>
+        </div>
+        <div class="product-card observe-fade delay-2">
+          <img src="assets/images/ninja.jpg" alt="Ninja / Trampoline">
+          <div class="product-card-body">
+            <h3>Ninja &amp; Trampoline</h3>
+            <p>High-energy courses and trampoline parks for ages 8–12.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="cta-full">
+    <div class="container observe-fade">
+      <h2>Ready to Glow?</h2>
+      <p>Book a night session or talk to us about a custom play project.</p>
+      <div class="hero-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Book Night Session</a>
+        <a href="contact.html" class="btn btn-white btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Indoor playground project comparison -->
+  <section class="night-section" style="background:var(--black-soft);">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Benchmarks</span>
+        <h2>Indoor Playground Project Comparison</h2>
+        <p>Planning benchmarks for the four project types we manufacture, based on completed installations in 60+ countries.</p>
+      </div>
+      <div class="card observe-fade" style="background:var(--black); overflow-x:auto; border:1px solid rgba(255,255,255,0.08);">
+        <table class="compare-dark">
+          <thead>
+            <tr>
+              <th>Project Type</th>
+              <th>Typical Size</th>
+              <th>Age Focus</th>
+              <th>Install Time</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Soft Play Only</td><td>80–150 m²</td><td>1–5 yrs</td><td>2–3 weeks</td><td>Cafés, small centers</td></tr>
+            <tr><td>Family Entertainment</td><td>200–400 m²</td><td>1–12 yrs</td><td>4–6 weeks</td><td>Malls, standalone</td></tr>
+            <tr><td>Trampoline / Ninja</td><td>300–600 m²</td><td>6–14 yrs</td><td>5–8 weeks</td><td>Active sports hubs</td></tr>
+            <tr><td>Full FEC Mix</td><td>500+ m²</td><td>All ages</td><td>8–12 weeks</td><td>Destination venues</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  
+
+   <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+            Playora
+          </a>
+          <p>Where Play Meets Happiness. Safe, fun indoor play for every little explorer.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-telephone"></i> +1 3052634095</li>
+            <li><i class="bi bi-envelope"></i> hello@playora.com</li>
+            <li><i class="bi bi-geo-alt"></i> NewYork,USA<p>123,Third Cross Street,Near Mecdonalds Shop.</p></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Our Newsletter</h4>
+          <p style="opacity:0.7; font-size:0.9rem; margin-bottom:0.5rem;">Get updates on events, offers and more!</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" required placeholder="Your email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Playora. All rights reserved.</span>
+        <span>Privacy Policy · Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

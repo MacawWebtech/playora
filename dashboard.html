@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Dashboard | Playora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="dash-layout">
+    <aside class="dash-sidebar">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+        Playora
+      </a>
+      <nav class="dash-nav">
+        <a href="dashboard.html" class="active"><i class="bi bi-grid-1x2"></i> Dashboard</a>
+        <a href="#book"><i class="bi bi-calendar-plus"></i> Book Session</a>
+        <a href="#membership"><i class="bi bi-card-checklist"></i> Membership</a>
+        <a href="#history"><i class="bi bi-clock-history"></i> Visit History</a>
+        <a href="#party"><i class="bi bi-balloon"></i> Birthday Parties</a>
+        <a href="#profile"><i class="bi bi-person"></i> Profile</a>
+        <a href="index.html"><i class="bi bi-box-arrow-left"></i> Back to Site</a>
+        <a href="login.html"><i class="bi bi-box-arrow-right"></i> Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-header">
+        <div>
+          <button class="sidebar-toggle btn btn-outline btn-sm" style="margin-bottom:0.5rem;"><i class="bi bi-list"></i></button>
+          <h2 style="margin:0;">Welcome Back, Priya!</h2>
+          <p style="color:var(--dark-soft); margin:0.25rem 0 0;">Here's what's happening with your kids</p>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.6rem;">
+          <a href="#book" class="btn btn-primary btn-sm">Book Session</a>
+          <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        </div>
+      </div>
+
+      <div class="dash-stats">
+        <div class="dash-stat">
+          <h4>Active Membership</h4>
+          <div class="val">Standard Plan</div>
+          <p style="font-size:0.8rem; color:var(--dark-soft);">3 sessions remaining · Expires 12 Oct 2026</p>
+        </div>
+        <div class="dash-stat">
+          <h4>Next Visit</h4>
+          <div class="val" style="font-size:1.3rem;">15 Sep 2026</div>
+          <p style="font-size:0.8rem; color:var(--dark-soft);">10:00 AM – 12:00 PM</p>
+        </div>
+        <div class="dash-stat">
+          <h4>Upcoming Bookings</h4>
+          <div class="val">2</div>
+        </div>
+        <div class="dash-stat">
+          <h4>Children</h4>
+          <div class="val">2</div>
+          <p style="font-size:0.8rem; color:var(--dark-soft);">Maya · Leo</p>
+        </div>
+      </div>
+
+      <!-- Book Session -->
+      <section id="book" class="card" style="margin-bottom:1.5rem;">
+        <div class="card-body">
+          <h3 style="margin-bottom:1.25rem;"><i class="bi bi-calendar-plus" style="color:var(--accent);"></i> Book a Play Session</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.25rem;">
+            <div class="form-group" style="margin:0;">
+              <label class="form-label">Select Date</label>
+              <input type="date" class="form-control" id="slot-date">
+            </div>
+            <div class="form-group" style="margin:0;">
+              <label class="form-label">Age Zone</label>
+              <select class="form-control">
+                <option>Toddlers Zone (1–3)</option>
+                <option selected>Junior Zone (4–7)</option>
+                <option>Action Zone (8–12)</option>
+                <option>Creative Zone</option>
+              </select>
+            </div>
+          </div>
+          <p style="font-weight:600; margin-bottom:0.6rem;">Available Slots</p>
+          <div class="slot-grid">
+            <button type="button" class="slot-btn">9:00 AM</button>
+            <button type="button" class="slot-btn selected">10:00 AM</button>
+            <button type="button" class="slot-btn">11:00 AM</button>
+            <button type="button" class="slot-btn unavailable">12:00 PM</button>
+            <button type="button" class="slot-btn">1:00 PM</button>
+            <button type="button" class="slot-btn">2:00 PM</button>
+            <button type="button" class="slot-btn">3:00 PM</button>
+            <button type="button" class="slot-btn unavailable">4:00 PM</button>
+          </div>
+          <div style="margin-top:1.25rem; display:flex; gap:1rem; flex-wrap:wrap; align-items:flex-end;">
+            <div class="form-group" style="margin:0; flex:1; min-width:160px;">
+              <label class="form-label">Children</label>
+              <select class="form-control">
+                <option>Maya (5 yrs)</option>
+                <option>Leo (2 yrs)</option>
+                <option selected>Maya + Leo</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary">Confirm Booking</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Membership -->
+      <section id="membership" class="card" style="margin-bottom:1.5rem;">
+        <div class="card-body">
+          <h3 style="margin-bottom:1rem;"><i class="bi bi-card-checklist" style="color:var(--accent);"></i> Membership</h3>
+          <p><strong>Standard Plan</strong> · 3 sessions remaining · Expires 12 Oct 2026</p>
+          <div style="margin-top:0.75rem; background:#F0F0F0; border-radius:999px; height:8px; overflow:hidden;">
+            <div style="width:40%; height:100%; background:var(--pink); border-radius:999px;"></div>
+          </div>
+          <a href="membership.html" class="btn btn-outline btn-sm" style="margin-top:1rem;">Upgrade Plan</a>
+        </div>
+      </section>
+
+      <!-- History -->
+      <section id="history" class="card" style="margin-bottom:1.5rem;">
+        <div class="card-body">
+          <h3 style="margin-bottom:1rem;"><i class="bi bi-clock-history" style="color:var(--accent);"></i> Upcoming Bookings</h3>
+          <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; min-width:480px;">
+              <thead>
+                <tr style="text-align:left; border-bottom:2px solid var(--pink);">
+                  <th style="padding:0.6rem;">Date</th>
+                  <th style="padding:0.6rem;">Time</th>
+                  <th style="padding:0.6rem;">Zone</th>
+                  <th style="padding:0.6rem;">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #eee;">
+                  <td style="padding:0.7rem;">15 Sep 2026</td>
+                  <td style="padding:0.7rem;">10:00 AM – 12:00 PM</td>
+                  <td style="padding:0.7rem;">Junior Zone</td>
+                  <td style="padding:0.7rem;"><span style="color:var(--accent); font-weight:600;">Confirmed</span></td>
+                </tr>
+                <tr>
+                  <td style="padding:0.7rem;">22 Sep 2026</td>
+                  <td style="padding:0.7rem;">02:00 PM – 04:00 PM</td>
+                  <td style="padding:0.7rem;">Action Zone</td>
+                  <td style="padding:0.7rem;"><span style="color:var(--accent); font-weight:600;">Confirmed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Party -->
+      <section id="party" class="card" style="margin-bottom:1.5rem;">
+        <div class="card-body">
+          <h3 style="margin-bottom:1rem;"><i class="bi bi-balloon" style="color:var(--accent);"></i> Book Birthday Party</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="form-group">
+              <label class="form-label">Package</label>
+              <select class="form-control">
+                <option>Basic – ₹6,999</option>
+                <option selected>Deluxe – ₹9,999</option>
+                <option>Premium – ₹14,999</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Theme</label>
+              <select class="form-control">
+                <option>Princess</option>
+                <option>Superhero</option>
+                <option selected>Unicorn</option>
+                <option>Space</option>
+                <option>Dino</option>
+                <option>Custom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Guest Count</label>
+              <input type="number" class="form-control" value="12" min="5" max="25">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Date</label>
+              <input type="date" class="form-control">
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary">Request Party Booking</button>
+        </div>
+      </section>
+
+      <!-- Quick Actions -->
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;">
+        <a href="#book" class="card" style="text-align:center; padding:1.5rem; transition:transform 0.2s;">
+          <div style="font-size:1.8rem; color:var(--accent); margin-bottom:0.5rem;"><i class="bi bi-calendar-plus"></i></div>
+          <strong>Book a Session</strong>
+        </a>
+        <a href="membership.html" class="card" style="text-align:center; padding:1.5rem;">
+          <div style="font-size:1.8rem; color:var(--accent); margin-bottom:0.5rem;"><i class="bi bi-card-checklist"></i></div>
+          <strong>Buy Membership</strong>
+        </a>
+        <a href="#party" class="card" style="text-align:center; padding:1.5rem;">
+          <div style="font-size:1.8rem; color:var(--accent); margin-bottom:0.5rem;"><i class="bi bi-balloon"></i></div>
+          <strong>Book Birthday Party</strong>
+        </a>
+      </div>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

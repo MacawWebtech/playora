@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Playora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .visit-card {
+      background: var(--white);
+      border: 2px solid var(--black);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.35s ease;
+      cursor: default;
+    }
+    .visit-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-accent);
+    }
+    .visit-card:hover h4 { color: var(--accent); }
+    .visit-card h4 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+      transition: color 0.3s ease;
+    }
+    .visit-card h4 i { color: var(--accent); }
+    .visit-card p { color: var(--black); margin: 0; }
+
+    /* Full width location */
+    .location-full {
+      position: relative;
+      width: 100%;
+      min-height: 380px;
+      overflow: hidden;
+      border-top: 3px solid var(--black);
+      border-bottom: 3px solid var(--black);
+    }
+    .location-full img {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(0.15);
+    }
+    .location-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 10, 10, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .location-pin {
+      text-align: center;
+      animation: pinBounce 2s ease-in-out infinite;
+    }
+    @keyframes pinBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    /* Mickey mouse – 3 colors only (black, white, accent) */
+    .mickey {
+      width: 72px;
+      height: 72px;
+      position: relative;
+      margin: 0 auto 0.75rem;
+    }
+    .mickey-head {
+      width: 48px;
+      height: 48px;
+      background: var(--black);
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 18px;
+      transform: translateX(-50%);
+      border: 2px solid var(--white);
+      z-index: 2;
+    }
+    .mickey-ear {
+      width: 28px;
+      height: 28px;
+      background: var(--black);
+      border-radius: 50%;
+      position: absolute;
+      border: 2px solid var(--white);
+      z-index: 1;
+    }
+    .mickey-ear.left { left: 2px; top: 0; }
+    .mickey-ear.right { right: 2px; top: 0; }
+    .mickey-face {
+      position: absolute;
+      left: 50%;
+      top: 28px;
+      transform: translateX(-50%);
+      width: 28px;
+      height: 20px;
+      background: var(--white);
+      border-radius: 50%;
+      z-index: 3;
+    }
+    .mickey-nose {
+      width: 8px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 36px;
+      transform: translateX(-50%);
+      z-index: 4;
+    }
+    .location-label {
+      display: inline-block;
+      background: var(--white);
+      color: var(--black);
+      border: 2px solid var(--black);
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-family: var(--font-display);
+      box-shadow: var(--shadow-md);
+    }
+    .location-label span { color: var(--accent); }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr !important; }
+      .location-full, .location-full img { min-height: 280px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <nav class="nav-menu">
+        <div class="home-switch">
+          <span class="home-switch-trigger">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option"><span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span> Home 1 – Main</a>
+            <a href="index-night.html" class="home-option"><span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span> Home 2 – Night</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image:url('assets/images/hero-6.jpg');">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></nav>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div class="observe-fade">
+          <h2 style="margin-bottom:1.25rem;">Send a Message</h2>
+          <form data-validate class="card"><div class="card-body">
+            <div class="form-group"><label class="form-label">Name</label><input type="text" class="form-control" required placeholder="Your name"><div class="form-error">Required</div></div>
+            <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-control" required placeholder="you@example.com"><div class="form-error">Valid email required</div></div>
+            <div class="form-group"><label class="form-label">Subject</label>
+              <select class="form-control" required>
+                <option value="">Select a topic</option>
+                <option>General Inquiry</option>
+                <option>Booking Help</option>
+                <option>Birthday Party</option>
+                <option>Membership</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">Message</label><textarea class="form-control" required placeholder="How can we help?"></textarea><div class="form-error">Required</div></div>
+            <button type="submit" class="btn btn-primary w-full">Send Message</button>
+          </div></form>
+        </div>
+        <div class="observe-fade delay-1">
+          <h2 style="margin-bottom:1.25rem;">Visit &amp; Call</h2>
+          <div class="visit-card">
+            <h4><i class="bi bi-geo-alt-fill"></i> Address</h4>
+            <p>123,Third Cross Street,Near Mecdonalds Shop.</p>
+          </div>
+          <div class="visit-card">
+            <h4><i class="bi bi-telephone-fill"></i> Phone</h4>
+            <p>+1 3052634095</p>
+          </div>
+          <div class="visit-card">
+            <h4><i class="bi bi-envelope-fill"></i> Email</h4>
+            <p>hello@playora.com</p>
+          </div>
+          <div class="visit-card">
+            <h4><i class="bi bi-clock-fill"></i> Hours</h4>
+            <p>Mon–Thu: 9 AM – 7 PM<br>Fri–Sat: 9 AM – 9 PM<br>Sun: 10 AM – 6 PM<br>Night Glow: Fri &amp; Sat 5:30–8:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-full">
+    <div class="container observe-fade">
+      <h2>Ready to Visit?</h2>
+      <p>Book a session or send us a message — we'll help you plan the fun.</p>
+      <div class="hero-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Book Now</a>
+        <a href="index.html" class="btn btn-white btn-lg">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full width location — paste YOUR Google Maps embed URL in the iframe src below -->
+  <section class="location-full">
+    <!-- 
+      How to get your link:
+      1. Open Google Maps → find your place → Share → Embed a map → copy the src="..." URL
+      2. Replace the src value inside the iframe only
+    -->
+    <iframe
+      id="gmap"
+      title="Playora location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.0505383674!2d-74.30915841691113!3d40.697193362054165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1788780011627!5m2!1sen!2sin"
+      width="100%"
+      height="380"
+      style="border:0;display:block;min-height:380px;width:100%;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="location-overlay" style="pointer-events:none;">
+      <div class="location-pin" style="pointer-events:auto;">
+        <div class="mickey" aria-hidden="true">
+          <div class="mickey-ear left"></div>
+          <div class="mickey-ear right"></div>
+          <div class="mickey-head"></div>
+          <div class="mickey-face"></div>
+          <div class="mickey-nose"></div>
+        </div>
+        <a class="location-label" href="https://www.google.com/maps/search/?api=1&query=NewYork,USA" target="_blank" rel="noopener">
+          We're <span>here</span> —NewYork
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+   <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+            Playora
+          </a>
+          <p>Where Play Meets Happiness. Safe, fun indoor play for every little explorer.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+           <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-telephone"></i> +1 3052634095</li>
+            <li><i class="bi bi-envelope"></i> hello@playora.com</li>
+            <li><i class="bi bi-geo-alt"></i> NewYork,USA<p>123,Third Cross Street,Near Mecdonalds Shop.</p></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Our Newsletter</h4>
+          <p style="opacity:0.7; font-size:0.9rem; margin-bottom:0.5rem;">Get updates on events, offers and more!</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" required placeholder="Your email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Playora. All rights reserved.</span>
+        <span>Privacy Policy · Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

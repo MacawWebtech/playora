@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | Playora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <nav class="nav-menu">
+        <div class="home-switch">
+          <span class="home-switch-trigger">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option"><span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span> Home 1 – Main</a>
+            <a href="index-night.html" class="home-option"><span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span> Home 2 – Night</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link active">Membership</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image:url('assets/images/hero-4.jpg');">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Membership</span></nav>
+      <h1>Membership Plans</h1>
+      <p>The smarter plan for repeat visitors.</p>
+    </div>
+  </section>
+
+  <!-- Plans – same color all 3 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Plans</span><h2>Membership Tiers</h2></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+        <div class="tier-card observe-fade">
+          <h3>Play Pack</h3>
+          <div class="price">₹2,499</div>
+          <p>10 sessions · Valid 4 months</p>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> Any age zone</li>
+            <li><i class="bi bi-check-circle-fill"></i> Online booking</li>
+            <li><i class="bi bi-check-circle-fill"></i> Session tracking</li>
+          </ul>
+          <a href="login.html" class="btn btn-outline w-full">Choose</a>
+        </div>
+        <div class="tier-card observe-fade delay-1">
+          <h3>Family Pass</h3>
+          <div class="price">₹4,999<span style="font-size:1rem;">/mo</span></div>
+          <p>Unlimited · Up to 2 kids</p>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> Priority booking</li>
+            <li><i class="bi bi-check-circle-fill"></i> 15% party discount</li>
+            <li><i class="bi bi-check-circle-fill"></i> Guest passes</li>
+          </ul>
+          <a href="login.html" class="btn btn-primary w-full">Get Started</a>
+        </div>
+        <div class="tier-card observe-fade delay-2">
+          <h3>Night Owl</h3>
+          <div class="price">₹3,499<span style="font-size:1rem;">/mo</span></div>
+          <p>Unlimited night sessions</p>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> Glow zone access</li>
+            <li><i class="bi bi-check-circle-fill"></i> Priority evening slots</li>
+            <li><i class="bi bi-check-circle-fill"></i> Exclusive events</li>
+          </ul>
+          <a href="login.html" class="btn btn-outline w-full">Join</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loyalty -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Perks</span><h2>Loyalty Benefits</h2></div>
+      <div class="feature-grid">
+        <div class="feature-item observe-fade"><div class="icon"><i class="bi bi-lightning-charge"></i></div><h3>Priority slots</h3><p>Book popular times first.</p></div>
+        <div class="feature-item observe-fade delay-1"><div class="icon"><i class="bi bi-wallet2"></i></div><h3>Better value</h3><p>Save vs single sessions.</p></div>
+        <div class="feature-item observe-fade delay-2"><div class="icon"><i class="bi bi-gift"></i></div><h3>Exclusive events</h3><p>Member-only mornings &amp; nights.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Compare</span><h2>Compare All Tiers</h2></div>
+      <div class="card observe-fade" style="overflow-x:auto;">
+        <table class="compare-table">
+          <thead><tr><th>Feature</th><th>Play Pack</th><th>Family Pass</th><th>Night Owl</th></tr></thead>
+          <tbody>
+            <tr><td>Sessions</td><td>10</td><td>Unlimited</td><td>Unlimited Night</td></tr>
+            <tr><td>Children</td><td>1</td><td>Up to 2</td><td>1</td></tr>
+            <tr><td>Priority booking</td><td>—</td><td class="check">✓</td><td class="check">✓</td></tr>
+            <tr><td>Party discount</td><td>—</td><td>15%</td><td>10%</td></tr>
+            <tr><td>Glow zone</td><td>—</td><td>—</td><td class="check">✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Choice with image + premium note -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Smart Choice</span><h2>The Smarter Plan for Repeat Visitors</h2></div>
+      <div class="smart-grid observe-fade">
+        <div class="smart-img">
+          <!-- Replace this image: put your file in assets/images/ and change src -->
+          <img src="assets/images/happy.jpg" alt="Happy family at Playora">
+        </div>
+        <div>
+          <div class="tier-card" style="text-align:left;">
+            <h3>Family Pass — Best for Regular Families</h3>
+            <div class="price" style="text-align:left;">₹4,999<span style="font-size:1rem;">/mo</span></div>
+            <p style="margin-bottom:1rem;">Premium plan at a low monthly price for regular families.</p>
+            <p style="margin-bottom:1rem;"><strong>Best if you visit for one year or more</strong> — not recommended if you only plan a few visits below that.</p>
+            <p style="margin-bottom:1.25rem;">Lock in unlimited play, stop calculating cost every visit, and enjoy priority booking all year.</p>
+            <a href="login.html" class="btn btn-primary">Choose Family Pass</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-full">
+    <div class="container observe-fade">
+      <h2>Start Saving on Play Today</h2>
+      <p>Activate any plan from your parent account.</p>
+      <div class="hero-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Get Membership</a>
+        <a href="contact.html" class="btn btn-white btn-lg">Ask a Question</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- School Trip -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Groups</span>
+        <h2>School Trip</h2>
+        <p>Organised play days for schools and groups — safe, structured and fun.</p>
+      </div>
+      <div class="trip-grid">
+        <div class="trip-box observe-fade">
+          <img src="assets/images/morning.jpg" alt="Morning trip">
+          <div class="trip-box-body">
+            <h3>Morning Trip</h3>
+            <p>Half-day slots for classes. Supervised zones, group games and a clear schedule for teachers.</p>
+          </div>
+        </div>
+        <div class="trip-box observe-fade delay-1">
+          <img src="assets/images/full.jpg" alt="Full day">
+          <div class="trip-box-body">
+            <h3>Full Day Visit</h3>
+            <p>Longer play blocks across age zones with snack break and optional activity hosts.</p>
+          </div>
+        </div>
+        <div class="trip-box observe-fade">
+          <img src="assets/images/sports.jpg" alt="Sports day">
+          <div class="trip-box-body">
+            <h3>Active / Sports Day</h3>
+            <p>Trampoline and action-focused sessions for older groups with safety briefing included.</p>
+          </div>
+        </div>
+        <div class="trip-box observe-fade delay-1">
+          <img src="assets/images/custom.jpg" alt="Custom trip">
+          <div class="trip-box-body">
+            <h3>Custom Group Plan</h3>
+            <p>Tell us your headcount and age mix — we design a trip plan that fits your school calendar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+   <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+            Playora
+          </a>
+          <p>Where Play Meets Happiness. Safe, fun indoor play for every little explorer.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-telephone"></i> +1 3052634095</li>
+            <li><i class="bi bi-envelope"></i> hello@playora.com</li>
+            <li><i class="bi bi-geo-alt"></i> NewYork,USA<p>123,Third Cross Street,Near Mecdonalds Shop.</p></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Our Newsletter</h4>
+          <p style="opacity:0.7; font-size:0.9rem; margin-bottom:0.5rem;">Get updates on events, offers and more!</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" required placeholder="Your email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Playora. All rights reserved.</span>
+        <span>Privacy Policy · Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

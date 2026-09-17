@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register | Playora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="index.html" class="btn btn-outline btn-sm">Back to Home</a>
+      </div>
+    </div>
+  </header>
+  <section class="section" style="min-height:100vh; display:flex; align-items:center; padding-top:calc(var(--header-h) + 2rem);">
+    <div class="container" style="max-width:920px;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+        <div class="card">
+          <div class="card-body">
+            <h2 style="margin-bottom:0.4rem;">Parent Login</h2>
+            <p style="color:var(--dark-soft); margin-bottom:1.5rem;">Access bookings, memberships & parties.</p>
+            <form data-validate action="dashboard.html" method="get">
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required placeholder="you@example.com">
+                <div class="form-error">Enter a valid email</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" required placeholder="••••••••">
+                <div class="form-error">Password required</div>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Log In</button>
+            </form>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h2 style="margin-bottom:0.4rem;">Create Account</h2>
+            <p style="color:var(--dark-soft); margin-bottom:1.5rem;">New here? Register in under a minute.</p>
+            <form data-validate action="dashboard.html" method="get">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" required placeholder="Your name">
+                <div class="form-error">Name required</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required placeholder="you@example.com">
+                <div class="form-error">Enter a valid email</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" required placeholder="Min. 8 characters">
+                <div class="form-error">Password required</div>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Create Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playora – Indoor Play Zone for Kids | Safe, Fun & Exciting</title>
+  <meta name="description" content="Playora is a safe, fun and exciting indoor play zone for little ones. Age-specific zones, birthday parties and memberships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+        Playora
+      </a>
+      <nav class="nav-menu" aria-label="Main">
+        <div class="home-switch">
+          <span class="home-switch-trigger">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option">
+              <span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span>
+              Home 1 – Main
+            </a>
+            <a href="index-night.html" class="home-option">
+              <span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span>
+              Home 2 – Night
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="menu-toggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO -->
+  <section class="hero-playora">
+    <!-- Replace assets/images/hero-home.jpg with your own image -->
+    <div class="hero-bg-upload">
+      <img src="assets/images/hero-home.jpg" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="container">
+      <div class="observe-fade">
+        <div class="hero-badge-row">
+          <span class="hero-pill"><i class="bi bi-shield-check"></i> Safe & Clean</span>
+          <span class="hero-pill"><i class="bi bi-people-fill"></i> Trained Supervisors</span>
+          <span class="hero-pill"><i class="bi bi-emoji-smile"></i> Fun for All Ages</span>
+        </div>
+        <h1>
+          <span class="line1">Play</span>
+          <span class="line2">Explore</span>
+          <span class="line3">Grow</span>
+        </h1>
+        <p class="lead">A safe, fun and exciting indoor play zone for your little ones!</p>
+        <div class="hero-btns">
+          <a href="login.html" class="btn btn-primary btn-lg">Book a Play Session <i class="bi bi-arrow-right"></i></a>
+          <a href="play-zones.html" class="btn btn-outline btn-lg">Explore Zones</a>
+        </div>
+      </div>
+      <div class="hero-visual observe-fade delay-1">
+        <div class="float-shape s1"></div>
+        <div class="float-shape s2"></div>
+        <div class="float-shape s3"></div>
+        <div class="float-shape s4"></div>
+        <div class="hero-img-wrap">
+          <img src="assets/images/kid-1.jpg" alt="Happy child in play zone">
+        </div>
+        <span class="hero-tag t1">Little Steps · Big Dreams</span>
+        <span class="hero-tag t2"><i class="bi bi-star-fill" style="color:var(--accent)"></i> Top Rated</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PLAY ZONES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Our Worlds</span>
+        <h2>Our Play Zones</h2>
+        <p>Different zones for every age, every interest, and every little adventurer!</p>
+      </div>
+      <div class="zones-grid">
+        <article class="zone-card observe-fade">
+          <div class="zone-card-img">
+            <img src="assets/images/kid-2.jpg" alt="Toddlers Zone">
+          </div>
+          <div class="zone-card-body">
+            <div class="age">1 – 3 Years</div>
+            <h3>Toddlers Zone</h3>
+            <p>Soft play, ball pits and sensory activities for little explorers.</p>
+            <a href="play-zones.html" class="btn btn-primary btn-sm">View Details <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="zone-card observe-fade delay-1">
+          <div class="zone-card-img">
+            <img src="assets/images/kid-3.jpg" alt="Junior Zone">
+          </div>
+          <div class="zone-card-body">
+            <div class="age">4 – 7 Years</div>
+            <h3>Junior Zone</h3>
+            <p>Slides, climbing frames and adventure play structures.</p>
+            <a href="play-zones.html" class="btn btn-primary btn-sm">View Details <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="zone-card observe-fade delay-2">
+          <div class="zone-card-img">
+            <img src="assets/images/kid-4.jpg" alt="Action Zone">
+          </div>
+          <div class="zone-card-body">
+            <div class="age">8 – 12 Years</div>
+            <h3>Action Zone</h3>
+            <p>Trampolines, obstacle courses and more thrills!</p>
+            <a href="play-zones.html" class="btn btn-primary btn-sm">View Details <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="zone-card observe-fade delay-3">
+          <div class="zone-card-img">
+            <img src="assets/images/kid-5.jpg" alt="Creative Zone">
+          </div>
+          <div class="zone-card-body">
+            <div class="age">All Ages</div>
+            <h3>Creative Zone</h3>
+            <p>Arts, crafts, building blocks and imaginative play.</p>
+            <a href="play-zones.html" class="btn btn-primary btn-sm">View Details <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-3">
+        <a href="play-zones.html" class="btn btn-outline">View All Zones <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SAFETY -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="safety-block observe-fade">
+        <div class="safety-block-img">
+          <img src="assets/images/safe.jpg" alt="Kids playing safely">
+        </div>
+        <div class="safety-block-content">
+          <h2><i class="bi bi-shield-check" style="color:var(--accent)"></i> Safety First, Always!</h2>
+          <p>We maintain the highest safety standards so kids can play freely and parents can relax. Certified equipment, trained staff and strict hygiene protocols in every zone.</p>
+          <a href="safety.html" class="btn btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BIRTHDAY TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="bday-teaser">
+        <div class="observe-fade">
+          <span class="eyebrow">Celebrate</span>
+          <h2 style="margin-block:0.75rem;">Make Their Day Extra Special!</h2>
+          <p style="color:var(--black); margin-bottom:1.5rem;">Celebrate birthdays in the most fun way possible! Our themed party packages include play time, decorations, food and more.</p>
+          <a href="birthday-parties.html" class="btn btn-primary btn-lg">Explore Birthday Parties <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="bday-visual observe-fade delay-1">
+          <img src="assets/images/celebaration.jpg" alt="Birthday party">
+          <span class="bday-badge">Birthday Parties</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 5. HEALTH BENEFITS -->
+  <section class="section health-section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Body & Mind</span>
+        <h2>It's Not Just Fun — It's Fantastic for Health</h2>
+        <p>Active play builds stronger bodies, sharper minds and happier kids every single visit.</p>
+      </div>
+      <div class="health-grid">
+        <div class="health-card observe-fade">
+          <div class="h-icon"><i class="bi bi-heart-pulse"></i></div>
+          <h3>Heart Healthy</h3>
+          <p>Running, climbing and jumping boost cardiovascular fitness in a playful way.</p>
+        </div>
+        <div class="health-card observe-fade delay-1">
+          <div class="h-icon"><i class="bi bi-lightning-charge"></i></div>
+          <h3>Motor Skills</h3>
+          <p>Balance, coordination and strength develop naturally through free play.</p>
+        </div>
+        <div class="health-card observe-fade delay-2">
+          <div class="h-icon"><i class="bi bi-emoji-smile"></i></div>
+          <h3>Mental Wellness</h3>
+          <p>Play reduces stress, builds confidence and sparks creativity.</p>
+        </div>
+        <div class="health-card observe-fade delay-3">
+          <div class="h-icon"><i class="bi bi-people"></i></div>
+          <h3>Social Growth</h3>
+          <p>Sharing, teamwork and new friendships form in every session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SAFETY X-CROSS -->
+  <section class="section">
+    <div class="container">
+      <div class="safety-cross">
+        <div class="safety-cross-images observe-fade">
+          <img src="assets/images/kid-6.jpg" alt="Safe soft play">
+          <img src="assets/images/kid-7.jpg" alt="Supervised play">
+          <img src="assets/images/kid-8.jpg" alt="Happy kids">
+          <img src="assets/images/kid-9.jpg" alt="Clean facility">
+        </div>
+        <div class="observe-fade delay-1">
+          <span class="eyebrow">Peace of Mind</span>
+          <h2 style="margin-block:0.75rem;">Designed with Safety and Smiles in Mind</h2>
+          <p style="color:var(--black);margin-bottom:1.5rem;">Every corner of Playora is built so kids can explore freely while parents relax with complete confidence.</p>
+          <ul class="safety-list">
+            <li><i class="bi bi-check-circle-fill"></i> <span>Certified soft-play and challenge equipment inspected quarterly</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Trained, background-checked staff on every shift</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Age-specific zones with capacity limits</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Daily deep cleans and hourly high-touch sanitization</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Full CCTV coverage and parent lounge live feed</span></li>
+          </ul>
+          <a href="safety.html" class="btn btn-primary" style="margin-top:0.5rem;">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- 8. FULL WIDTH CTA -->
+  <section class="cta-full">
+    <div class="container observe-fade">
+      <h2>Ready for the Next Adventure?</h2>
+      <p>Book a play session in under a minute or start a membership for unlimited fun.</p>
+      <div class="hero-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Book Now</a>
+        <a href="membership.html" class="btn btn-white btn-lg">View Memberships</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. EXTEND THE FUN -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">More to Explore</span>
+        <h2>Extend the Fun with Food, Games &amp; Events</h2>
+        <p>Play is just the beginning — snacks, special events and extra activities make every visit memorable.</p>
+      </div>
+      <div class="fun-extend">
+        <div class="fun-card observe-fade">
+          <div class="fun-card-img">
+            <img src="assets/images/kid-10.jpg" alt="Healthy snacks">
+          </div>
+          <h3>Tasty Treats</h3>
+          <p>Kid-friendly snacks and drinks available at our café corner — fresh and fun.</p>
+        </div>
+        <div class="fun-card observe-fade delay-1">
+          <div class="fun-card-img">
+            <img src="assets/images/kid-11.jpg" alt="Party games">
+          </div>
+          <h3>Party Games</h3>
+          <p>Hosted group games, treasure hunts and themed activities on weekends.</p>
+        </div>
+        <div class="fun-card observe-fade delay-2">
+          <div class="fun-card-img">
+            <img src="assets/images/kid-12.jpg" alt="Special events">
+          </div>
+          <h3>Special Events</h3>
+          <p>Glow nights, holiday parties and member-only mornings throughout the year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+            Playora
+          </a>
+          <p>Where Play Meets Happiness. Safe, fun indoor play for every little explorer.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-telephone"></i> +1 3052634095</li>
+            <li><i class="bi bi-envelope"></i> hello@playora.com</li>
+            <li><i class="bi bi-geo-alt"></i> NewYork,USA<p>123,Third Cross Street,Near Mecdonalds Shop.</p></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Our Newsletter</h4>
+          <p style="opacity:0.7; font-size:0.9rem; margin-bottom:0.5rem;">Get updates on events, offers and more!</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" required placeholder="Your email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Playora. All rights reserved.</span>
+        <span>Privacy Policy · Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

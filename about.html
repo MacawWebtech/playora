@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Playora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <nav class="nav-menu">
+        <div class="home-switch">
+          <span class="home-switch-trigger">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option"><span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span> Home 1 – Main</a>
+            <a href="index-night.html" class="home-option"><span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span> Home 2 – Night</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image:url('assets/images/hero-6.jpg');">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>About</span></nav>
+      <h1>About Playora</h1>
+      <p>Where Play Meets Happiness</p>
+    </div>
+  </section>
+
+  
+  <!-- Our Story with interactive graph -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Our Story</span>
+        <h2>Born from a Simple Wish</h2>
+        <p>Hover a bar to raise it and read that chapter of our journey.</p>
+      </div>
+      <div class="story-graph observe-fade" id="storyGraph">
+        <div class="story-bar-wrap" data-story="0" style="--bar-high: 90px;">
+          <div class="story-bar" style="height:50px;"></div>
+          <span class="bar-label">2018</span>
+        </div>
+        <div class="story-bar-wrap" data-story="1" style="--bar-high: 120px;">
+          <div class="story-bar" style="height:70px;"></div>
+          <span class="bar-label">2020</span>
+        </div>
+        <div class="story-bar-wrap" data-story="2" style="--bar-high: 150px;">
+          <div class="story-bar" style="height:95px;"></div>
+          <span class="bar-label">2023</span>
+        </div>
+        <div class="story-bar-wrap" data-story="3" style="--bar-high: 180px;">
+          <div class="story-bar" style="height:120px;"></div>
+          <span class="bar-label">2025</span>
+        </div>
+        <div class="story-bar-wrap" data-story="4" style="--bar-high: 200px;">
+          <div class="story-bar" style="height:140px;"></div>
+          <span class="bar-label">Today</span>
+        </div>
+      </div>
+      <div class="story-panel observe-fade active" id="storyPanel">
+        <h3>2018 — First Steps</h3>
+        <p>Playora opened with one soft-play zone and a small team who believed every child deserves a safe place to play — and every parent deserves real peace of mind. Hover the bars above to explore each chapter.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Core Values -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Principles</span><h2>Our Core Values</h2></div>
+      <div class="observe-fade" style="max-width:800px;margin-inline:auto;">
+        <div class="value-bar">
+          <div class="v-icon"><i class="bi bi-shield-check"></i></div>
+          <div><h3>Safety First</h3><p>Every protocol exists to protect the children in our care — inspected equipment and trained staff on every shift.</p></div>
+        </div>
+        <div class="value-bar">
+          <div class="v-icon"><i class="bi bi-heart"></i></div>
+          <div><h3>Inclusive Joy</h3><p>Play is for every ability and every background. We design zones so every child can join in.</p></div>
+        </div>
+        <div class="value-bar">
+          <div class="v-icon"><i class="bi bi-lightning"></i></div>
+          <div><h3>Continuous Growth</h3><p>We improve equipment, training and experience every year based on parent feedback.</p></div>
+        </div>
+        <div class="value-bar">
+          <div class="v-icon"><i class="bi bi-people"></i></div>
+          <div><h3>Community</h3><p>We build friendships between families and lasting local roots around Playora.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey / Growth Story – filled & aligned -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade">
+        <span class="eyebrow">Journey</span>
+        <h2>Our Growth Story</h2>
+        <p>From one soft-play corner to a full indoor play destination — year by year.</p>
+      </div>
+      <div class="journey-grid observe-fade">
+        <div class="journey-card">
+          <div class="journey-year">2018</div>
+          <h3>First Location</h3>
+          <p>Opened with one soft-play zone and a small dedicated team focused on safety and smiles.</p>
+        </div>
+        <div class="journey-card">
+          <div class="journey-year">2020</div>
+          <h3>Action Zone Added</h3>
+          <p>Expanded with trampolines, obstacle courses and more trained staff on every shift.</p>
+        </div>
+        <div class="journey-card">
+          <div class="journey-year">2023</div>
+          <h3>Parent Dashboard</h3>
+          <p>Launched online booking, memberships and real-time slot availability for families.</p>
+        </div>
+        <div class="journey-card">
+          <div class="journey-year">2025</div>
+          <h3>Night Glow Sessions</h3>
+          <p>Introduced after-dark experiences and Night Owl membership for evening play.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">People</span><h2>Experts Who Watch the Kids</h2></div>
+      <div class="team-grid">
+        <div class="team-card observe-fade"><div class="team-img"><img src="assets/images/Emma.jpg" alt="Emma"></div><h3>Emma Rivera</h3><div class="role">Founder & Director</div><p>Early-childhood educator passionate about safe play.</p></div>
+        <div class="team-card observe-fade delay-1"><div class="team-img"><img src="assets/images/james.jpg" alt="James"></div><h3>James Lee</h3><div class="role">Operations Manager</div><p>Keeps every session smooth and safe.</p></div>
+        <div class="team-card observe-fade delay-2"><div class="team-img"><img src="assets/images/sofia.jpg" alt="Sofia"></div><h3>Sofia Patel</h3><div class="role">Party Experience Lead</div><p>Turns birthdays into stress-free magic.</p></div>
+        <div class="team-card observe-fade delay-3"><div class="team-img"><img src="assets/images/marcus.jpg" alt="Marcus"></div><h3>Marcus Chen</h3><div class="role">Safety Supervisor</div><p>First-aid certified lead on every shift.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Difference -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Difference</span><h2>Why Choose Us</h2></div>
+      <div class="spin-grid">
+        <div class="spin-box observe-fade">
+          <div class="icon"><i class="bi bi-award"></i></div>
+          <h3>Certified Safety</h3>
+          <p>Inspections &amp; first-aid staff</p>
+        </div>
+        <div class="spin-box observe-fade delay-1">
+          <div class="icon"><i class="bi bi-phone"></i></div>
+          <h3>Easy Booking</h3>
+          <p>Real-time slots &amp; instant confirm</p>
+        </div>
+        <div class="spin-box observe-fade delay-2">
+          <div class="icon"><i class="bi bi-emoji-smile"></i></div>
+          <h3>Happy Families</h3>
+          <p>Thousands of return visits</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Vision -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Purpose</span><h2>Mission &amp; Vision</h2></div>
+      <div class="mission-grid">
+        <div class="mission-card observe-fade"><h3><i class="bi bi-bullseye" style="color:var(--accent);"></i> Mission</h3><p>To provide a safe, stimulating indoor play environment where children explore and grow — while parents enjoy complete peace of mind.</p></div>
+        <div class="mission-card observe-fade delay-1"><h3><i class="bi bi-eye" style="color:var(--accent);"></i> Vision</h3><p>To be the most trusted indoor play destination — known for safety, joy and a community that celebrates every little explorer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head observe-fade"><span class="eyebrow">Reviews</span><h2>Real Smiles, Real Feedback</h2><p>What visitors say about Playora</p></div>
+      <div class="testimonials-grid">
+        <div class="testi-card observe-fade"><div class="quote-icon"><i class="bi bi-quote"></i></div><p class="quote">"The age zones are a game-changer. Both my kids leave happy — and I leave relaxed!"</p><div class="testi-author"><div class="testi-avatar">SM</div><div><h4>Sarah M.</h4><span>Mom of two</span></div></div></div>
+        <div class="testi-card observe-fade delay-1"><div class="quote-icon"><i class="bi bi-quote"></i></div><p class="quote">"Birthday party was seamless. Staff handled everything. Pure magic I leave relaxed!."</p><div class="testi-author"><div class="testi-avatar">JK</div><div><h4>James K.</h4><span>Dad of one</span></div></div></div>
+        <div class="testi-card observe-fade delay-2"><div class="quote-icon"><i class="bi bi-quote"></i></div><p class="quote">"Clean, safe, and booking is so easy. We never miss a slot anymore I leave relaxed!."</p><div class="testi-author"><div class="testi-avatar">AL</div><div><h4>Aisha L.</h4><span>Family Pass</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+   <section class="cta-full">
+    <div class="container observe-fade">
+      <h2>Come See Us in Action</h2>
+      <p>Book a session or schedule a short facility tour.</p>
+      <div class="hero-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Book a Visit</a>
+        <a href="contact.html" class="btn btn-white btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Full Width -->
+  <section class="section faq-full" id="faq">
+    <div class="container" style="max-width:800px;">
+      <div class="section-head observe-fade"><span class="eyebrow">Help</span><h2>Frequently Asked Questions</h2></div>
+      <div class="faq-item observe-fade"><div class="faq-q">What ages do you cater for? <i class="bi bi-chevron-down"></i></div><div class="faq-a">We welcome children from 1 to 12 years across age-specific zones.</div></div>
+      <div class="faq-item observe-fade"><div class="faq-q">Do I need to book in advance? <i class="bi bi-chevron-down"></i></div><div class="faq-a">Yes — booking ensures a slot in the right zone. Walk-ins are subject to availability.</div></div>
+      <div class="faq-item observe-fade"><div class="faq-q">Are socks required? <i class="bi bi-chevron-down"></i></div><div class="faq-a">Grip socks are required and available for purchase at reception.</div></div>
+      <div class="faq-item observe-fade"><div class="faq-q">Can parents stay with children? <i class="bi bi-chevron-down"></i></div><div class="faq-a">Yes. Parents are welcome in all zones and can use the lounge with live camera feed.</div></div>
+      <div class="faq-item observe-fade"><div class="faq-q">How do memberships work? <i class="bi bi-chevron-down"></i></div><div class="faq-a">Choose a plan, activate in the parent dashboard, and book sessions with priority access.</div></div>
+    </div>
+  </section>
+
+ 
+
+   <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+            Playora
+          </a>
+          <p>Where Play Meets Happiness. Safe, fun indoor play for every little explorer.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-telephone"></i> +1 3052634095</li>
+            <li><i class="bi bi-envelope"></i> hello@playora.com</li>
+            <li><i class="bi bi-geo-alt"></i> NewYork,USA<p>123,Third Cross Street,Near Mecdonalds Shop.</p></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Our Newsletter</h4>
+          <p style="opacity:0.7; font-size:0.9rem; margin-bottom:0.5rem;">Get updates on events, offers and more!</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" required placeholder="Your email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Playora. All rights reserved.</span>
+        <span>Privacy Policy · Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
