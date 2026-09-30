@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{if(localStorage.getItem('playora-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}try{if(localStorage.getItem('playora-dir')==='rtl')document.documentElement.setAttribute('dir','rtl');}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Playora</title>
+  <meta name="description" content="Create a free Playora parent account to book indoor play sessions, manage memberships and plan birthday parties for your kids.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/redesign.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <nav class="nav-menu">
+        <div class="home-switch">
+          <span class="home-switch-trigger">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option"><span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span> Home 1 – Main</a>
+            <a href="index-night.html" class="home-option"><span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span> Home 2 – Night</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="login.html" class="nav-link nav-auth-mobile">Log In</a>
+        <a href="signup.html" class="nav-link nav-auth-mobile nav-auth-primary active" aria-current="page">Sign Up</a>
+      </nav>
+      <div class="header-actions">
+        <button class="rtl-toggle" type="button" aria-label="Switch to right-to-left layout" aria-pressed="false" title="RTL / LTR">RTL</button>
+        <button class="theme-toggle" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="login.html" class="btn btn-outline btn-sm auth-btn">Log In</a>
+        <a href="signup.html" class="btn btn-primary btn-sm auth-btn active" aria-current="page">Sign Up</a>
+        <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-hero" style="background-image:url('assets/images/hero-6.jpg');">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Sign Up</span></nav>
+      <h1>Create Your Account</h1>
+      <p>Join Playora to book sessions, manage memberships and plan parties.</p>
+      <div class="ph-tags"><span>Easy booking</span><span>Memberships</span><span>Party planning</span></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="max-width:920px;">
+      <div class="auth-wrap">
+        <div class="card">
+          <div class="card-body">
+            <h2 style="margin-bottom:0.4rem;">Create Account</h2>
+            <p style="color:var(--dark-soft); margin-bottom:1.5rem;">New here? Register in under a minute.</p>
+            <form data-validate action="dashboard.html" method="get">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" required placeholder="Your name">
+                <div class="form-error">Name required</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required placeholder="you@example.com">
+                <div class="form-error">Enter a valid email</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" required placeholder="Min. 8 characters">
+                <div class="form-error">Password required</div>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Sign Up</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

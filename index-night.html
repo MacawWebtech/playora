@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playora Night – Glow Nights at the Indoor Play Center for Kids</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="description" content="Glow nights at Playora indoor play center: neon lights, arcade corner and supervised play every Friday and Saturday, 5:30–8:30 PM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/redesign.css">
+  <style>
+    body.night-home { background: var(--black); color: var(--white); }
+    body.night-home .site-header { background: rgba(10,10,10,0.95); border-bottom-color: rgba(255,77,109,0.25); }
+    body.night-home .logo, body.night-home .nav-link, body.night-home .home-switch-trigger { color: var(--white); }
+    body.night-home .nav-link:hover, body.night-home .nav-link.active { color: var(--accent); background: var(--accent-soft); }
+    body.night-home .home-switch-dropdown { background: var(--white) !important; }
+    body.night-home .home-switch-dropdown .home-option { color: var(--black) !important; }
+    body.night-home .menu-toggle { background: rgba(255,255,255,0.1); color: var(--white); }
+    @media (max-width: 768px) {
+      body.night-home .nav-menu .nav-link,
+      body.night-home .nav-menu .home-switch-trigger { color: var(--black); }
+    }
+      </style>
+  <script>try{if(localStorage.getItem('playora-dir')==='rtl')document.documentElement.setAttribute('dir','rtl');}catch(e){}</script>
+</head>
+<body class="night-home">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span> Playora</a>
+      <nav class="nav-menu">
+        <div class="home-switch">
+          <span class="home-switch-trigger active" aria-current="page">Home <i class="bi bi-chevron-down"></i></span>
+          <div class="home-switch-dropdown">
+            <a href="index.html" class="home-option"><span class="home-option-icon day"><i class="bi bi-sun-fill"></i></span> Home 1 – Main</a>
+            <a href="index-night.html" class="home-option active" aria-current="page"><span class="home-option-icon night"><i class="bi bi-moon-stars-fill"></i></span> Home 2 – Night</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="safety.html" class="nav-link">Safety</a>
+        <a href="play-zones.html" class="nav-link">Play Zones</a>
+        <a href="birthday-parties.html" class="nav-link">Birthday Parties</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="login.html" class="nav-link nav-auth-mobile">Log In</a>
+        <a href="signup.html" class="nav-link nav-auth-mobile nav-auth-primary">Sign Up</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Switch to right-to-left layout" aria-pressed="false" title="RTL / LTR">RTL</button>
+        <a href="login.html" class="btn btn-outline btn-sm auth-btn">Log In</a>
+        <a href="signup.html" class="btn btn-primary btn-sm auth-btn">Sign Up</a>
+        <button class="menu-toggle"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hx-hero nx-hero">
+    <div class="hx-hero-bg"><img src="assets/images/safe.jpg" alt="Neon-lit arcade games and ticket station at the Playora play center after dark" fetchpriority="high"></div>
+    <div class="container">
+      <div class="observe-fade">
+        <span class="hx-eyebrow"><i class="bi bi-moon-stars-fill"></i> Glow Nights · Fri &amp; Sat</span>
+        <h1>The Play Center <span class="pop">Lights Up</span> After Dark</h1>
+        <p class="lead">Neon lights, glow dance floor, arcade games and supervised play zones for kids — plus a relaxed lounge for parents. Every Friday and Saturday, 5:30–8:30 PM.</p>
+        <div class="hero-btns">
+          <a href="login.html" class="btn btn-primary btn-lg">Book a Glow Night <i class="bi bi-arrow-right"></i></a>
+          <a href="index.html" class="btn btn-ghost btn-lg"><i class="bi bi-sun-fill"></i> Daytime Fun</a>
+        </div>
+        <div class="hx-trust">
+          <span><i class="bi bi-shield-check"></i> Fully supervised</span>
+          <span><i class="bi bi-lightning-charge-fill"></i> Neon &amp; arcade</span>
+          <span><i class="bi bi-cup-hot-fill"></i> Parent lounge</span>
+        </div>
+      </div>
+      <div class="hx-stack observe-fade delay-1">
+        <div class="hx-photo p1"><img src="assets/images/hero-home.jpg" alt="Smiling girl holding glowing light sticks at a glow party"></div>
+        <div class="hx-photo p2"><img src="assets/images/kid-9.jpg" alt="Two kids laughing over an air hockey table in the arcade"></div>
+        <span class="hx-chip c1"><i class="bi bi-stars"></i> Glow party</span>
+        <span class="hx-chip c2"><i class="bi bi-controller"></i> Arcade corner</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <section class="hx-stats">
+    <div class="container">
+      <div class="hx-stats-card observe-fade">
+        <div class="hx-stat"><strong>Fri &amp; Sat</strong><span>Glow nights every week</span></div>
+        <div class="hx-stat"><strong>5:30 PM</strong><span>Doors open</span></div>
+        <div class="hx-stat"><strong>8:30 PM</strong><span>Last glow of the night</span></div>
+        <div class="hx-stat"><strong>100%</strong><span>Supervised play</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S ON -->
+  <section class="hx-section">
+    <div class="container">
+      <div class="hx-head observe-fade">
+        <span class="eyebrow">What's On</span>
+        <h2 class="nx-glowtxt">Three Ways to Glow</h2>
+        <p>Pick your favourite corner of the play center after dark.</p>
+      </div>
+      <div class="nx-sessions">
+        <article class="nx-session observe-fade">
+          <img src="assets/images/glow.jpg" alt="Glow dance floor with neon lights" loading="lazy">
+          <div class="body"><span class="time">Fri &amp; Sat · 5:30–8:30 PM</span><h3>Glow Dance Floor</h3><p>Black lights, glow sticks and kids' hits — a mini disco made for little movers.</p><div class="meta"><span>Ages 4–12</span><a href="login.html" class="btn btn-primary btn-sm">Book</a></div></div>
+        </article>
+        <article class="nx-session observe-fade delay-1">
+          <img src="assets/images/kid-7.jpg" alt="Child playing an arcade game under blue neon light" loading="lazy">
+          <div class="body"><span class="time">Fri &amp; Sat · 5:30–8:30 PM</span><h3>Neon Arcade Corner</h3><p>Air hockey, racing and classic games glowing in every colour.</p><div class="meta"><span>All ages</span><a href="login.html" class="btn btn-primary btn-sm">Book</a></div></div>
+        </article>
+        <article class="nx-session observe-fade delay-2">
+          <img src="assets/images/star.jpg" alt="Star-shaped lanterns glowing in a dark room" loading="lazy">
+          <div class="body"><span class="time">Fri &amp; Sat · 5:30–8:30 PM</span><h3>Starlight Chill Zone</h3><p>A calm, twinkly corner with soft play for toddlers and tired parents.</p><div class="meta"><span>Ages 1–5</span><a href="login.html" class="btn btn-primary btn-sm">Book</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NIGHT GALLERY -->
+  <section class="hx-section tint">
+    <div class="container">
+      <div class="hx-head observe-fade">
+        <span class="eyebrow">After Dark</span>
+        <h2 class="nx-glowtxt">See the Play Center Glow</h2>
+        <p>Neon lights, party rooms and arcade fun once the sun goes down.</p>
+      </div>
+      <div class="hx-mosaic observe-fade">
+        <figure class="wide"><img src="assets/images/vip.jpg" alt="Purple-lit party lounge with sofas and glowing tables" loading="lazy"><figcaption>Party Lounge</figcaption></figure>
+        <figure class="tall"><img src="assets/images/kid-6.jpg" alt="Toddler smiling in a colourful ball pit" loading="lazy"><figcaption>Ball Pit</figcaption></figure>
+        <figure><img src="assets/images/adventure.jpg" alt="Brightly lit fun-fair style play structure" loading="lazy"><figcaption>Fun-Fair Lights</figcaption></figure>
+        <figure class="wide"><img src="assets/images/kid-10.jpg" alt="Candy apples with sprinkles on a party treat stand" loading="lazy"><figcaption>Party Treats</figcaption></figure>
+        <figure><img src="assets/images/choose.jpg" alt="Decorated party tables set for a celebration" loading="lazy"><figcaption>Party Tables</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="hx-section">
+    <div class="container">
+      <div class="hx-head observe-fade">
+        <span class="eyebrow">Easy Evenings</span>
+        <h2 class="nx-glowtxt">Your Glow Night in 4 Steps</h2>
+        <p>Book online, arrive at 5:30 PM and let the lights do the rest.</p>
+      </div>
+      <div class="hx-steps">
+        <div class="hx-step observe-fade"><i class="bi bi-calendar2-check"></i><h3>Book a night</h3><p>Choose Friday or Saturday online.</p></div>
+        <div class="hx-step observe-fade delay-1"><i class="bi bi-person-check"></i><h3>Check in</h3><p>Quick sign-in at the welcome desk.</p></div>
+        <div class="hx-step observe-fade delay-2"><i class="bi bi-emoji-laughing"></i><h3>Glow &amp; play</h3><p>Dance, game and explore all evening.</p></div>
+        <div class="hx-step observe-fade delay-3"><i class="bi bi-cup-straw"></i><h3>Chill out</h3><p>Snacks and coffee in the parent lounge.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NIGHT PARTIES + SAFETY -->
+  <section class="hx-section tint">
+    <div class="container hx-split">
+      <div class="hx-collage observe-fade">
+        <div class="hx-photo a"><img src="assets/images/corner.jpg" alt="Warmly lit party hall with themed decor and tables" loading="lazy"></div>
+        <div class="hx-photo b"><img src="assets/images/joy.jpg" alt="Toddler celebrating birthday surrounded by balloons" loading="lazy"></div>
+        <div class="badge-round"><b>Glow</b>party<br>rooms</div>
+      </div>
+      <div class="observe-fade delay-1">
+        <span class="eyebrow">Night Celebrations</span>
+        <h2 class="nx-glowtxt" style="margin-block:0.75rem;">Glow-in-the-Dark Birthday Parties</h2>
+        <p style="color:rgba(255,255,255,0.8);">Book our black-light party room for a birthday they'll talk about for months. We supply the neon, the games and the host.</p>
+        <div class="hx-feats">
+          <div class="hx-feat"><i class="bi bi-balloon-heart"></i><div><h4>Black-light room</h4><p>Private neon-ready room for your group.</p></div></div>
+          <div class="hx-feat"><i class="bi bi-people"></i><div><h4>Trained hosts</h4><p>Staff run games and keep everyone safe.</p></div></div>
+          <div class="hx-feat"><i class="bi bi-shield-check"></i><div><h4>Safe after dark</h4><p>Bright exits, soft flooring, CCTV throughout.</p></div></div>
+          <div class="hx-feat"><i class="bi bi-moon-stars"></i><div><h4>Night Owl pass</h4><p>Unlimited night sessions for regulars.</p></div></div>
+        </div>
+        <div class="hero-btns" style="margin-bottom:0;">
+          <a href="birthday-parties.html" class="btn btn-primary">Plan a Party <i class="bi bi-arrow-right"></i></a>
+          <a href="membership.html" class="btn btn-ghost" style="border-color:#fff;color:#fff;">Night Owl Membership</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-full">
+    <div class="container observe-fade">
+      <h2>Ready to Glow?</h2>
+      <p>Book your Friday or Saturday glow night in under a minute.</p>
+      <div class="hero-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Book Night Session</a>
+        <a href="contact.html" class="btn btn-white btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark"><i class="bi bi-balloon-heart-fill"></i></span>
+            Playora
+          </a>
+          <p>Where Play Meets Happiness. Safe, fun indoor play for every little explorer.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="play-zones.html">Play Zones</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-telephone"></i> +1 3052634095</li>
+            <li><i class="bi bi-envelope"></i> hello@playora.com</li>
+            <li><i class="bi bi-geo-alt"></i> NewYork,USA<p>123,Third Cross Street,Near Mecdonalds Shop.</p></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Join Our Newsletter</h4>
+          <p style="opacity:0.7; font-size:0.9rem; margin-bottom:0.5rem;">Get updates on events, offers and more!</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" required placeholder="Your email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Playora. All rights reserved.</span>
+        <span>Privacy Policy · Terms & Conditions</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
